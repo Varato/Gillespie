@@ -1,0 +1,77 @@
+% !Mode:: "TeX:UTF-8"
+%!TEX program = xelatex
+
+
+\documentclass[a4paper, 10pt]{scrartcl}
+
+% Mathematics
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[version=4]{mhchem}
+\usepackage{physics}
+% \numberwithin{equation}{subsection}
+
+% Font and Style
+\usepackage{ucs}
+\usepackage[T1]{fontenc}
+\usepackage{abstract}
+\usepackage{authblk}
+\usepackage{url}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{wrapfig}
+\hypersetup{colorlinks=false}
+
+% Font Package (select one)
+\usepackage{lmodern}
+% \usepackage{kpfonts}
+% \usepackage{ccfonts}
+%\usepackage{cmbright}
+%\usepackage{antpolt}
+% \usepackage{iwona}
+
+\bibliographystyle{plain}
+
+% Image and Graphics
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{dblfloatfix}
+\usepackage[left=2cm, right=2cm, top=2.5cm, bottom=3cm]{geometry}
+  \setlength{\columnsep}{15pt}
+
+\DeclareMathOperator{\diff}{d\!}
+\newcommand{\im}{\mathrm{i}}
+\newcommand{\ee}{\mathrm{e}}
+\renewcommand*{\Authand}{\quad}
+\renewcommand{\abstractname}{}
+\renewcommand{\absnamepos}{empty}
+\renewcommand\Affilfont{\fontsize{9}{10.8}\itshape}
+\renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
+% Document Information
+\title{PC5213 Biophysics Final Report}
+\subtitle{Simulation of Steady State Kinetics of Enzyme Reaction}
+\author[*]{Xin Chen A0151856Y}
+\date{\vspace{-7ex}}
+
+\begin{document}
+  % Create Title, Abstract and TOC
+  \maketitle 
+  \begin{abstract}
+  Based on a simple system, a retrospective summary on steady-state kinetics of enzyme-catalysed chemical reactions is firstly composed as the introduction. Next, the second section is a review of analytic methods and Gillespie Monte Carlo algorithm for studying the steady-state kinetics of the system, which can lead to the Michaelis Menten theory. The equivalence of the direct and "first-reaction" Gillespie Monte Carlo methods is shown in the second section as well. Finally, in the last section, simulation results from both of the two Gillespie methods are demonstrated and compared.
+
+  % \vspace{0.8cm}
+  \end{abstract}
+  % \tableofcontents
+
+  % CONTENT
+  \input{content.tex}
+  % Input your source files here
+  % Bibliography
+  \bibliography{bib/bibliography.bib}
+\end{document}
