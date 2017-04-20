@@ -74,7 +74,7 @@ def paint_state(ax, Cs):
 
 	signal = np.array(signal)
 
-	ax.plot(signal[:,0], signal[:,1], '-', color="cornflowerblue")
+	ax.plot(signal[:,0], signal[:,1], '-', color="blue")
 	ax.axis([0, 10, -0.1, 1.1])
 	ax.set_yticks([0, 1])
 	# ax.set_ylabel("state", fontsize=30)

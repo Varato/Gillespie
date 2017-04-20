@@ -68,7 +68,7 @@ def paint_state(ax, Cs):
 	# for i in range(0, len(signal)-1, 2):
 	# 	plt.plot( [signal[i][0], signal[i+1][0]], [signal[i][1], signal[i+1][1]], 'r-' )
 
-	ax.plot(signal[:,0], signal[:,1], '-', color="cornflowerblue")
+	ax.plot(signal[:,0], signal[:,1], '-', color="blue")
 	ax.axis([0, 10, -0.1, 1.1])
 	ax.set_yticks([0, 1])
 	# ax.set_ylabel("state", fontsize=30)
